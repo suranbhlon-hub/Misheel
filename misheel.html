@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story - Misheel & Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff69b4 0%, #ff1493 25%, #ff69b4 50%, #da70d6 75%, #ff1493 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+            padding: 40px 20px;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 60px 40px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(255, 20, 147, 0.4);
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #ff1493;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(255, 20, 147, 0.2);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .heart-decoration {
+            font-size: 2em;
+            margin: 20px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .story-text {
+            color: #c71585;
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin: 30px 0;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            text-align: left;
+        }
+
+        .story-text p {
+            margin-bottom: 15px;
+        }
+
+        /* Floating hearts background */
+        .floating-heart {
+            position: fixed;
+            font-size: 2em;
+            pointer-events: none;
+            animation: floatUp 8s infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) rotate(0deg);
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+
+        .heart1 { left: 10%; animation-delay: 0s; }
+        .heart2 { left: 20%; animation-delay: 2s; }
+        .heart3 { left: 30%; animation-delay: 4s; }
+        .heart4 { left: 40%; animation-delay: 1s; }
+        .heart5 { left: 50%; animation-delay: 3s; }
+        .heart6 { left: 60%; animation-delay: 5s; }
+        .heart7 { left: 70%; animation-delay: 2.5s; }
+        .heart8 { left: 80%; animation-delay: 4.5s; }
+        .heart9 { left: 90%; animation-delay: 1.5s; }
+
+        .decorative-shapes {
+            margin-top: 40px;
+            font-size: 3em;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .sparkle {
+            display: inline-block;
+            margin: 0 10px;
+            animation: twinkle 1.5s ease-in-out infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .button {
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #ff1493, #da70d6);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.3);
+            font-weight: bold;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(255, 20, 147, 0.5);
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="floating-heart heart1">💕</div>
+    <div class="floating-heart heart2">💖</div>
+    <div class="floating-heart heart3">💗</div>
+    <div class="floating-heart heart4">💝</div>
+    <div class="floating-heart heart5">💕</div>
+    <div class="floating-heart heart6">💖</div>
+    <div class="floating-heart heart7">💗</div>
+    <div class="floating-heart heart8">💝</div>
+    <div class="floating-heart heart9">💕</div>
+
+    <div class="container">
+        <h1>✨ Our Love Story ✨</h1>
+        
+        <div class="heart-decoration">💕 💖 💗</div>
+
+        <div class="story-text">
+            <p><strong>Hey misheel,</strong></p>
+
+            <p>How have you been? I hope you're doing okay with your family and friends and staying healthy. This message is all about our relationship, our ups and downs together. Even though we are not together, I still love you and will love you forever and ever. Even if I get into a relationship, get married, and have kids, I still remember you because you're a part of my heart. So here's everything from the beginning...</p>
+
+            <p>At first, we were just strangers and didn't know anything about each other—two clueless hearts wandering around. We first met when you wanted to join the clan (Onclaves) just for fun and to have new friends. I added you to the clan, and then I saw how you reacted, how you treated others with care, and that made me fall in love with you. We were just talking friends, nothing more. Then on day 6 of us talking, I confessed to you, but you said that you don't trust online relationships and you're very afraid of them. But I stayed, didn't say anything about it, and understood.</p>
+
+            <p>But on Day 11—BOOM—you confessed to me! It was crazy, like wtf?! I still remember the first pickup line I used on you: <strong>"An angel's blessings always works, doesn't it?"</strong> Then we kept our relationship private and just wanted to hide it.</p>
+
+            <p>On Day 21, Elias joined, and on Day 23, we revealed our relationship with Mina. The days went by, and on Day 31, Elias was saying things and I didn't like that, so I got mad at you. Then I started joining clan trends less because I wanted to push stars in MLBB.</p>
+
+            <p>Then one random day, I kicked Elias because he got 3 warnings. And then his so-called girlfriend joined and told us how nice it was and what a good person he is and blah blah blah. Then we just decided to add him, although we already knew that his so-called girlfriend was him. And then AGAIN he got kicked for getting 3 warnings, like wtf 😭!</p>
+
+            <p>Then he joined trends while not being in the clan. I didn't notice because I wasn't joining them. Then one random night, I decided to join the smash or pass trend and I saw him there joining the trends. I told all of you to not add him to trends anymore, and then I went back to grinding stars and didn't focus on the trends.</p>
+
+            <p>Then I decided to join the duo trend one day and saw Elias. I cursed at him in my native language, and Enso got mad and scheduled it for tomorrow. I asked you about it, and you promised to never talk to him ever again (you'll see it in our memories section). And the next day, I saw him again, and I asked you why you added him. You said he was just a friend when you literally told me you wouldn't talk to him ever again.</p>
+
+            <p>Then things went south, and it became a quarrel. Our relationship ended.</p>
+
+            <p><strong>But misheel, none of that changes how I feel. You will always have a special place in my heart. Forever, always, and in every moment—you are loved beyond measure. 💕</strong></p>
+        </div>
+
+        <div class="heart-decoration">💗 💝 💖</div>
+
+        <div class="decorative-shapes">
+            <span class="sparkle">💖</span>
+            <span class="sparkle">✨</span>
+            <span class="sparkle">💕</span>
+            <span class="sparkle">✨</span>
+            <span class="sparkle">💖</span>
+        </div>
+
+        <button class="button" onclick="alert('With all my love 💕')">Click for a Message of Love</button>
+    </div>
+</body>
+</html>
