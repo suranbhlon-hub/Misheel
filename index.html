@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+        }
+        section {
+            padding: 60px;
+            margin: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+        .floating-heart {
+            position: absolute;
+            color: #ff6b6b;
+            font-size: 2em;
+            animation: float 5s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Love Story</h1>
+    
+    <section>
+        <h2>Meeting Through Clan</h2>
+        <p>It all started during a clan get-together...</p>
+    </section>
+
+    <section>
+        <h2>Confessions</h2>
+        <p>It was a beautiful evening when we finally shared our feelings...</p>
+    </section>
+
+    <section>
+        <h2>Elias Incidents</h2>
+        <p>There were moments of joy and some funny incidents with Elias that brought us closer...</p>
+    </section>
+
+    <section>
+        <h2>The Final Quarrel</h2>
+        <p>Like any relationship, we faced challenges, but it taught us the value of communication...</p>
+    </section>
+
+    <script>
+        // Create floating hearts
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'floating-heart';
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 2 + 3) + 's'; // float time
+            document.body.appendChild(heart);
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+        
+        setInterval(createHeart, 200);
+    </script>
+</body>
+</html>
